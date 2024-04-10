@@ -70,6 +70,7 @@ listContainer.addEventListener("click", function (e) {
         saveData();
     }
     else if (e.target.tagName === "SPAN") {
+        previousData = listContainer.innerHTML;
         e.target.parentElement.remove();
         saveData();
     }
