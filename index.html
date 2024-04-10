@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="todo-app">
+        <h1>Daily Planner</h1>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your task" onkeypress="handleKeyPress(event)">
+            <label for="effort">Effort Level:</label>
+                <select id="effort">
+                    <option value="Easy">Easy</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            <button onclick="addTask()">add</button>
+        </div>
+        <ul id="list-container"></ul>
+        <button id="undo-button">Undo</button>
+        <button id="clear-button">Clear All</button>
+    </div>
+</div>
+<script src="script.js"></script>   
+
+</body>
+
+</html>
